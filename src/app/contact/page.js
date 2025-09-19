@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState("");
@@ -39,7 +40,7 @@ export default function Contact() {
             <button type="submit" className="px-6 py-2 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:from-blue-600 hover:to-blue-800 hover:shadow-xl cursor-pointer w-full">Send</button>
           </div>
         </form>
-        {status && <p className="mt-4 text-white">{status}</p>}
+  {status && <p className="mt-4 text-white">{status}</p>}
       </div>
     </div>
   );
